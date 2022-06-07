@@ -247,19 +247,21 @@ margin-left: 50px;
 
 
 /* Features */
-.section-feature {
+.feature {
     padding-bottom: 94px;
     padding-top: 94px;
 }
-.feature-list {
+
+.feature__list {
     display: flex;
 }
-.card-feature {
+
+.feature__card {
     width: 270px;
     height: auto;
 }
 
-.card-icon {
+.feature__icon {
     display: flex;
     margin-bottom: 30px;
     width: 100%;
@@ -272,10 +274,11 @@ margin-left: 50px;
 
 }
 
-.feature-list li +li {
+.feature__list li +li {
     margin-left: 30px;
 }
-.feature-list .title {
+
+.feature__list .feature__title {
     margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 700;
@@ -284,7 +287,8 @@ margin-left: 50px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.feature-list .text {
+
+.feature__list .feature__text {
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
@@ -292,9 +296,24 @@ margin-left: 50px;
     letter-spacing: 0.03em;
 }
 
-/* Section */
 
-.section-title {
+
+/* Our work */
+.work {
+    padding-bottom: 94px;
+    
+}
+
+.work__list {
+    display: flex;
+    
+}
+
+.work__list li + li {
+    margin-left: 30px;
+}
+
+.work__title {
     margin-bottom: 50px;
     color: var(--title-text-color);
     font-weight: 700;
@@ -304,36 +323,13 @@ margin-left: 50px;
     letter-spacing: 0.03em;
 }
 
-/* Our work */
-.work {
-    padding-bottom: 94px;
-    
-}
-.work-list {
-    display: flex;
-    
-}
-.work-list li + li {
-    margin-left: 30px;
-}
-.work-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    
-    color: #FFFFFF;
-    
-}
-.example {
+.work__example {
     display: flex;
     position: relative;
     
 }
-.example-title {
+
+.work__example-title {
     display: flex;
     position: absolute;
     align-items: center;
@@ -343,6 +339,16 @@ margin-left: 50px;
     background: rgba(47, 48, 58, 0.8);
     bottom: 0%;
     right: 0%;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
 }
 
 /* Team */
@@ -373,8 +379,7 @@ margin-left: 50px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    /* identical to box height */
-    
+
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -383,7 +388,6 @@ margin-left: 50px;
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.18;
-    /* identical to box height */
     
     text-align: center;
 }
@@ -395,7 +399,7 @@ margin-left: 50px;
 }
 .section-team .team-card {
     background: #FFFFFF;
-    /* material shadow v1 */
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .item-list {
@@ -436,32 +440,33 @@ margin-left: 50px;
 .item-icon:focus .icon-team {
     fill: #FFFFFF;
 }
+
 /* Clients */
 
 .clients {
-    
     padding-bottom: 94px;
     padding-top: 94px;
 }
 
-.title-clients {
+.clients__title {
     font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
     
-        color: #212121;
+    color: #212121;
 }
 
-.clients-list {
+.clients__list {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.clients-logo {
+
+.clients__logo {
     display: flex;
     width: 170px;
     height: 92px;
@@ -472,25 +477,29 @@ margin-left: 50px;
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-item:last-child {
+
+.clients__item:last-child {
     margin-right: 0px;
 }
-.clients-logo:hover,
-.clients-logo:focus {
+
+.clients__logo:hover,
+.clients__logo:focus {
     border: 1px solid #2196F3;
 }
+
 .icon-logo {
     height: 60px;
     fill:#AFB1B8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-logo:hover .icon-logo,
-.clients-logo:focus .icon-logo {
+.clients__logo:hover .icon-logo,
+.clients__logo:focus .icon-logo {
     fill: #2196F3;
 }
 
 /* Address */
+
 .page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
