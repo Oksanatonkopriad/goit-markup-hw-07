@@ -1,0 +1,13 @@
+@mixin fonts($ff:false, $fw, $fz, $lh, $ls, $tt:false) {
+    @if $ff {
+        font-family: $ff;
+    }
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
+    @if $tt {
+        text-transform: $tt;
+    }
+    
+}
