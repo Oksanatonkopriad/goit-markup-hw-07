@@ -1,13 +1,11 @@
-@mixin fonts($ff:false, $fw, $fz, $lh, $ls, $tt:false) {
-    @if $ff {
-        font-family: $ff;
-    }
+@mixin fonts($ff, $fw, $fz, $lh, $ls, $tt) {
+    font-family: $ff;
     font-weight: $fw;
     font-size: $fz;
     line-height: $lh;
     letter-spacing: $ls;
-    @if $tt {
-        text-transform: $tt;
-    }
+    text-transform: $tt;
+}
+@mixin name {
     
 }

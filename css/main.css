@@ -135,8 +135,8 @@ p {
 .page-footer .logo-left {
   color: #2196F3;
   text-decoration: none;
-  font-family: 'Raleway';
   font-style: normal;
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -146,8 +146,8 @@ p {
 .page-footer .logo-right {
   color: var(--primary-bg-color);
   text-decoration: none;
-  font-family: 'Raleway';
   font-style: normal;
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -166,7 +166,7 @@ p {
 .page-header .logo-left {
   color: #2196F3;
   text-decoration: none;
-  font-family: 'Raleway';
+  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
